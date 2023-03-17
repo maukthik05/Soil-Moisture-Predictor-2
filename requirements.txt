@@ -1,6 +1,5 @@
 streamlit
 pandas
 tensorflow
-cv2
 numpy
 PIL
