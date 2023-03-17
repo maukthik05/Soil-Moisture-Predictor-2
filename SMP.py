@@ -46,5 +46,5 @@ else:
     image = Image.open(file)
     predictions = import_and_predict(image, model)
     st.write(
-    "This soil has a moisture content of",predictions[0][0])
+    "This soil has a moisture content of",predictions[0][0],"%")
     st.image(image, use_column_width=True)
