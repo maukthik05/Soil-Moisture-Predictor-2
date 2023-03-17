@@ -44,7 +44,7 @@ if file is None:
     st.text("Please upload an image file")
 else:
     image = Image.open(file)
-    st.image(image, use_column_width=True)
     predictions = import_and_predict(image, model)
     st.write(
-    "This soil has a moisture content of",predictions)
+    "This soil has a moisture content of",predictions[0][0])
+    st.image(image, use_column_width=True)
