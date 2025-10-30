@@ -26,7 +26,7 @@ def path_to_eagertensor(image_data):
 
 file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
 
-st.set_option('deprecation.showfileUploaderEncoding', False)
+#st.set_option('deprecation.showfileUploaderEncoding', False)
 def import_and_predict(image_data, model):
     
         Sample_image_prediction = []
