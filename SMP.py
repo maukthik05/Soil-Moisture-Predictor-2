@@ -24,7 +24,7 @@ def path_to_eagertensor(image_data):
         image = tf.image.resize(image, (image_height, image_width))
         return image
 
-file = st.file_uploader("Please upload an brain scan file", type=["jpg", "png"])
+file = st.file_uploader("Please upload the soil image file", type=["jpg", "png"])
 
 #st.set_option('deprecation.showfileUploaderEncoding', False)
 def import_and_predict(image_data, model):
