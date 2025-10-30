@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
 def load_model():
-  model=tf.keras.models.load_model('my_model12.hdf5')
+  model=tf.keras.models.load_model('my_model12_savedmodel.keras')
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
